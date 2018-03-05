@@ -1,0 +1,5 @@
+mov ds,0h//修改 ds段寄存器
+mov ax, offset INT_60H//把INT 60H指令的偏移量给ax
+mov [0180h], ax//把偏移量保存在0000：0180h处
+mov ax ，int_60H//把INT 60H指令的基址给ax
+mov [0182h],ax//保存基址
