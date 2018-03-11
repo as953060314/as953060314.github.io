@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Python]]></title>
+    <url>%2F2018%2F03%2F11%2FPython%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F03%2F11%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[Python Homework of Week 1]]></title>
+    <url>%2F2018%2F03%2F09%2F2018-03-09-Homework-Week-1%2F</url>
+    <content type="text"><![CDATA[Homework of Week 1Question:2-1,2-21234message=&quot;hello world&quot;print(message)message=&quot;World is cruel&quot;print(message) Question:2-3,2-4,2-5,2-7,2-1012345678910111213141516171819name=&quot;YeZihao&quot;print(&quot;Hello &quot;,name, &quot;,would you like to learn some Python today?&quot;)print(name.title())print(name.upper())print(name.lower())print(&quot;Ezio Auditore Da Firenze said:\&quot;Twenty two years ago, I stood where I stand now,\and watched my beloved died, betrayed by those I have called friends.\Avengence clouded my mind, it would cosumed me, were if not for the wisdom of a few strangers. \Who taught me to look past my instincts.They never preached answers, but guided me to learn from my self. \We don&apos;t need anyone to tell us what to do. Not Savonarola or the Medici. We are free to follow our own path. \There are those who will take that freedom from us, and too many of you gladly give it. \But it is our ablity to choose - whatever you think is true - that makes us human.\There is no book or teacher to give you the answers, to show you the path. \Choose your own way.Do not follow me, or anyone else.\&quot; &quot;)famous_name=&quot;\nEzio Auditore Da Firenze \t&quot; #上面一堆的\是用于美观print(famous_name)print(famous_name.lstrip())print(famous_name.rstrip())print(famous_name.strip()) Question:2-8,2-9123456print(5+3)print(10-2)print(2*4)print(int(16/2))num=1024print(&quot;My favorite number is &quot;,str(num) ) Import thisThe Zen of Python, by Tim Peters Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated. Flat is better than nested. Sparse is better than dense. Readability counts. Special cases aren&apos;t special enough to break the rules. Although practicality beats purity. Errors should never pass silently. Unless explicitly silenced. In the face of ambiguity, refuse the temptation to guess. There should be one-- and preferably only one --obvious way to do it. Although that way may not be obvious at first unless you&apos;re Dutch. Now is better than never. Although never is often better than *right* now. If the implementation is hard to explain, it&apos;s a bad idea. If the implementation is easy to explain, it may be a good idea. Namespaces are one honking great idea -- let&apos;s do more of those!]]></content>
+      <categories>
+        <category>homework</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[Python & My Though]]></title>
+    <url>%2F2018%2F03%2F06%2F2017-11-30-Hello-Blog%2F</url>
+    <content type="text"><![CDATA[Python Python给我的第一印象，是一门简化了许多，更为接近人类表达想法的编程语言。或者说，比起C++，我感觉python像一种可以随时根据需求变成各种模样的万用工具，人们很多时候不需要知道工具工作的详细原理，只要知道它怎么使用就好了，而C++则像一堆元件，利用这堆元件我们能搭建起更贴切符合要求的工具，但这个搭建的过程并不容易，至少对于很多人来说直接使用现成的工具比自己从头搭建更加方便。当然我也不是说python不能像C++那样自己搭建工具（那些大量的第三方库就是大佬们用python搭好的工具），但那不是python的突出优点。Python的优点应该是更加简单易用，更又助于加快开发软件的速度。 好吧。上面python的优点是我在官网上和其他地方看来得。作为先学了C++的人，我再去学python，说实话我感觉各种不适应，可能是我还没有从C++的惯性思维里挣脱出来，所以自学python的时候经常感觉还不如C++好写。但我也明白这是我python并未真正熟练掌控的缘故，可能这个学期学完后我就会彻底叛变到python阵营。 Python感觉是一栋大厦，很多人都在为它添砖加瓦，官网的社区里也有很多入门的教程，我想入门python应该不会太难。 Target 这个学期我希望自己能熟练地使用python这门语言吧，很多已经能熟练地用python做很多事的大佬们都说python是一门能做很多事情的语言，只有不断去用，才能真正地熟练地掌控，光看教程是没什么用的。我希望这个学期后我能用python写一款自己的图像处理软件，相当于一个滤镜，这是我的最终愿望了（暂定）。至于更高级的东西，学校教的都没有学好，我真的没有余力去学那些大佬参加比赛或者其他之类的，但怎么说，努力吧。]]></content>
+      <categories>
+        <category>homework</category>
+      </categories>
+  </entry>
+</search>
