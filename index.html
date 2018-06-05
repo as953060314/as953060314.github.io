@@ -369,7 +369,7 @@
       
         
           <h1 id="Homework-of-Scipy"><a href="#Homework-of-Scipy" class="headerlink" title="Homework of Scipy"></a>Homework of Scipy</h1><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p><img src="https://raw.githubusercontent.com/as953060314/picture/master/2018-06-05_225801.png" alt=""></p>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> linalg <span class="keyword">as</span> ln </span><br><span class="line"><span class="keyword">import</span> scipy</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np </span><br><span class="line">m=<span class="number">10</span></span><br><span class="line">n=<span class="number">5</span></span><br><span class="line">A=scipy.random.rand(m,n)</span><br><span class="line">b=scipy.random.rand(m,<span class="number">1</span>)</span><br><span class="line">x,residual,s,d=scipy.linalg.lstsq(A, b)</span><br><span class="line">print(x)</span><br><span class="line">print(residual/n)</span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> linalg <span class="keyword">as</span> ln </span><br><span class="line"><span class="keyword">import</span> scipy</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np 。。</span><br><span class="line">m=<span class="number">10</span></span><br><span class="line">n=<span class="number">5</span></span><br><span class="line">A=scipy.random.rand(m,n)</span><br><span class="line">b=scipy.random.rand(m,<span class="number">1</span>)</span><br><span class="line">x,residual,s,d=scipy.linalg.lstsq(A, b)</span><br><span class="line">print(x)</span><br><span class="line">print(residual/n)</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/06/05/homework-of-scipy/#more" rel="contents">
@@ -2428,6 +2428,28 @@ Python Python给我的第一印象，是一门简化了许多，更为接近人�
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
