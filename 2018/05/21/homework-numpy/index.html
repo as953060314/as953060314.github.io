@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Homework of Numpy 12345678910111213141516171819import numpy as np n=200m=500A=np.random.normal(size=[n,m])print(np.mean(A))print(np.var(A))def toeplitz(x,y):	toeplitz_matrix=np.zeros([len(x),len(y)])">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Homework of Numpy">
+<meta property="og:url" content="http://yoursite.com/2018/05/21/homework-numpy/index.html">
+<meta property="og:site_name" content="Sakurasou">
+<meta property="og:description" content="Homework of Numpy 12345678910111213141516171819import numpy as np n=200m=500A=np.random.normal(size=[n,m])print(np.mean(A))print(np.var(A))def toeplitz(x,y):	toeplitz_matrix=np.zeros([len(x),len(y)])">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://raw.githubusercontent.com/as953060314/picture/master/2018-05-21_212324.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/as953060314/picture/master/2018-05-21_222849.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/as953060314/picture/master/2018-05-21_222905.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/as953060314/picture/master/2018-05-21_222914.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/as953060314/picture/master/2018-05-21_222924.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/as953060314/picture/master/2018-05-21_222933.png">
+<meta property="og:updated_time" content="2018-05-21T16:09:25.918Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Homework of Numpy">
+<meta name="twitter:description" content="Homework of Numpy 12345678910111213141516171819import numpy as np n=200m=500A=np.random.normal(size=[n,m])print(np.mean(A))print(np.var(A))def toeplitz(x,y):	toeplitz_matrix=np.zeros([len(x),len(y)])">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/as953060314/picture/master/2018-05-21_212324.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/05/21/homework-numpy/"/>
+
+
+
+
+
+  <title>Homework of Numpy | Sakurasou</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Sakurasou</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/21/homework-numpy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ye Zihao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/portrait.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sakurasou">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Homework of Numpy</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-21T22:25:07+08:00">
+                2018-05-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/homework/" itemprop="url" rel="index">
+                    <span itemprop="name">homework</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/05/21/homework-numpy/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/05/21/homework-numpy/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Homework-of-Numpy"><a href="#Homework-of-Numpy" class="headerlink" title="Homework of Numpy"></a>Homework of Numpy</h1><p><img src="https://raw.githubusercontent.com/as953060314/picture/master/2018-05-21_212324.png" alt=""></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np </span><br><span class="line">n=<span class="number">200</span></span><br><span class="line">m=<span class="number">500</span></span><br><span class="line">A=np.random.normal(size=[n,m])</span><br><span class="line">print(np.mean(A))</span><br><span class="line">print(np.var(A))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">toeplitz</span><span class="params">(x,y)</span>:</span></span><br><span class="line">	toeplitz_matrix=np.zeros([len(x),len(y)])</span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(len(x)):</span><br><span class="line">		<span class="keyword">for</span> j <span class="keyword">in</span> range(len(y)-i):</span><br><span class="line">			toeplitz_matrix[j][j+i]=y[i];<span class="comment">#取y的第i个元素，作为第i列开始的斜线上的值</span></span><br><span class="line">		<span class="keyword">for</span> j <span class="keyword">in</span> range(i,len(x)):   </span><br><span class="line">			toeplitz_matrix[j][j-i]=x[i]; <span class="comment">#取x的第i个元素，作为第i行开头的斜线上的值</span></span><br><span class="line">	<span class="keyword">return</span> toeplitz_matrix</span><br><span class="line"></span><br><span class="line">vectorX=np.random.normal(size=[m])</span><br><span class="line">vectorY=np.random.normal(size=[m])</span><br><span class="line">B=toeplitz(vectorX,vectorY) <span class="comment">#测试函数</span></span><br></pre></td></tr></table></figure>
+<p>调用numpy模块中的random的normal函数可随机生成指定大小的服从高斯分布的矩阵<br>根据toeplitz矩阵的性质，传入两个随机向量x,y作为生成矩阵的基础。<br>因为toelitz矩阵的性质是a[i][j]=a[i-1][j-1],使用两个循环分别生成对角线上半部分与对角线下半部分的矩阵。<br><a id="more"></a> </p>
+<hr>
+<p><img src="https://raw.githubusercontent.com/as953060314/picture/master/2018-05-21_222849.png" alt=""></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sum_A_A=A+A</span><br><span class="line">mul_A_AT=np.matmul(A,A.transpose())</span><br><span class="line">mul_AT_A=np.matmul(A.transpose(),A)</span><br><span class="line">mul_A_B=np.matmul(A,B)</span><br><span class="line">I=np.eye([len(B),len(B)])</span><br><span class="line">constant=<span class="number">7</span></span><br><span class="line">mul_A_B_I=np.matmul(A,B-constant*I)</span><br></pre></td></tr></table></figure>
+<p>A、B采用刚开始生成的A、B矩阵，因为python的支持矩阵的加减，所以直接加减即可，numpy提供matmul函数用于矩阵相乘<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">数据过多，不予显示</span><br><span class="line">``` </span><br><span class="line"> </span><br><span class="line">----------------------------------------------------  </span><br><span class="line"></span><br><span class="line">![](https://raw.githubusercontent.com/as953060314/picture/master/2018-05-21_222859.png)</span><br><span class="line">```py</span><br><span class="line">b=random.random(size=[m])</span><br><span class="line">x=np.linalg.solve(B,b)</span><br></pre></td></tr></table></figure></p>
+<p>numpy.linalg用于矩阵求逆，行列数和求解方程等问题，其中solve函数用于求解方程</p>
+<h4 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[1.20120856e-01  4.41123209e-02  2.04747755e-02 -3.07493851e-03</span><br><span class="line"> 6.42280172e-02  8.93103284e-02 -7.19149485e-02 -8.56545532e-02</span><br><span class="line">-3.00182149e-02  4.58770228e-02 -4.97305732e-03 -4.13289742e-02</span><br><span class="line"> 6.08289103e-02 -1.97740723e-02  4.54804478e-02  9.47587969e-02</span><br><span class="line">-3.23121795e-02  2.07067072e-02  1.88935042e-02  7.10890707e-02</span><br><span class="line">-2.23007296e-02 -2.89321197e-02 -6.86733343e-02  6.31168495e-03...more data]</span><br></pre></td></tr></table></figure>
+<hr>
+<p><img src="https://raw.githubusercontent.com/as953060314/picture/master/2018-05-21_222905.png" alt=""><br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Frobenius_norm_A=np.linalg.norm(A,<span class="string">"fro"</span>)</span><br><span class="line">infinity_norm=np.linalg.norm(B,np.inf)</span><br><span class="line">max_B=np.max(B)</span><br><span class="line">min_B=np.min(B)</span><br></pre></td></tr></table></figure></p>
+<p>numpy.linalg提供求范数（norm）的函数norm，第一个参数代表需要求范数的矩阵，第二个参数代表需要求哪一种类型的范数  </p>
+<h4 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">317.5813609674095</span><br><span class="line">394.43238941954667</span><br><span class="line">3.2240185505846477</span><br><span class="line">-3.2887955774704363</span><br></pre></td></tr></table></figure>
+<hr>
+<p><img src="https://raw.githubusercontent.com/as953060314/picture/master/2018-05-21_222914.png" alt=""></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">power_interaion</span><span class="params">(Z,stop)</span>:</span></span><br><span class="line">    <span class="comment">#Z为目标矩阵</span></span><br><span class="line">	u= np.random.normal(size=[len(Z)]).transpose()</span><br><span class="line">	u=u/np.max(u)</span><br><span class="line">    <span class="comment">#规范化u,防止计算过程产生溢出</span></span><br><span class="line">	v=u.copy()</span><br><span class="line">	change=np.inf</span><br><span class="line">	val=np.max(v)</span><br><span class="line">    <span class="comment">#生成v0,change初始化为无限大</span></span><br><span class="line">	iteration=<span class="number">0</span></span><br><span class="line">    <span class="comment">#记录迭代次数</span></span><br><span class="line">	s_time=time.clock()</span><br><span class="line">    <span class="comment">#记录开始时间</span></span><br><span class="line">	<span class="keyword">while</span> abs(change)&gt;stop:</span><br><span class="line">    <span class="comment">#当误差大于要求值时，继续迭代</span></span><br><span class="line">		v=np.matmul(Z,u)</span><br><span class="line">		max_v=np.max(v)</span><br><span class="line">		change=val-max_v</span><br><span class="line">		val=max_v</span><br><span class="line">		u=v/max_v</span><br><span class="line">        <span class="comment">#利用uk得出uk+1</span></span><br><span class="line">		iteration+=<span class="number">1</span></span><br><span class="line">	<span class="keyword">return</span> [val,u,iteration,time.clock()-s_time]</span><br></pre></td></tr></table></figure>
+<p>numpy并没有提供实现幂迭代的函数接口，所以需要我们自己实现幂迭代获得特征值。<br>根据幂迭代的算法，随机生成一个初始向量u，把u单位化，记录开始的时间。根据幂迭代的定理，最大特征值为lim(k-&gt;无穷)max(uk)，当两次求出的值的差小于要求误差时，说明迭代得出了符合要求的结果。  </p>
+<h4 id="测试代码"><a href="#测试代码" class="headerlink" title="测试代码"></a>测试代码</h4><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Z=np.random.random(size=[<span class="number">5</span>,<span class="number">5</span>])</span><br><span class="line">print(power_interaion(Z,<span class="number">1e-8</span>))</span><br></pre></td></tr></table></figure>
+<h4 id="结果-2"><a href="#结果-2" class="headerlink" title="结果"></a>结果</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[2.70827538375684, array([1.        , 0.44946869, 0.77024251, 0.82104694, 0.55418511]), 18, 0.00015178781121221067]</span><br></pre></td></tr></table></figure>
+<hr>
+<p><img src="https://raw.githubusercontent.com/as953060314/picture/master/2018-05-21_222924.png" alt=""><br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">p_all=[<span class="number">0.1</span>,<span class="number">0.2</span>,<span class="number">0.3</span>,<span class="number">0.4</span>,<span class="number">0.5</span>,<span class="number">0.6</span>,<span class="number">0.7</span>,<span class="number">0.8</span>,<span class="number">0.9</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> p <span class="keyword">in</span> p_all:</span><br><span class="line">	C=np.random.random(size=[n,n])</span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">		<span class="keyword">for</span> j <span class="keyword">in</span> range(n):</span><br><span class="line">			C[i][j]=<span class="number">1</span> <span class="keyword">if</span> C[i][j]&gt;p <span class="keyword">else</span> <span class="number">0</span></span><br><span class="line"></span><br><span class="line">	_,s,_=np.linalg.svd(C)</span><br><span class="line">	max_singular=np.max(s)</span><br><span class="line">	print(<span class="string">"n=&#123;&#125;, p=&#123;&#125;, max_singular=&#123;&#125;"</span>.format(n,p,max_singular))</span><br></pre></td></tr></table></figure></p>
+<p>定义一个关于p的列表，给p不同的初值以观察n,p和最大奇异值之间的关系。<br>根据题目生成矩阵C<br>numpy提供了对矩阵进行svd分解的函数svd，返回值是酉矩阵，奇异值列表与酉矩阵。使用max函数获得最大的奇异值。  </p>
+<h4 id="结果如下："><a href="#结果如下：" class="headerlink" title="结果如下："></a>结果如下：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">n=1000, p=0.1, max_singular=900.3295011412832</span><br><span class="line">n=1000, p=0.2, max_singular=799.9151077913688</span><br><span class="line">n=1000, p=0.3, max_singular=700.3536328393312</span><br><span class="line">n=1000, p=0.4, max_singular=601.2824981484671</span><br><span class="line">n=1000, p=0.5, max_singular=499.97072982587673</span><br><span class="line">n=1000, p=0.6, max_singular=400.1535461744695</span><br><span class="line">n=1000, p=0.7, max_singular=300.73085868276326</span><br><span class="line">n=1000, p=0.8, max_singular=200.62285503617426</span><br><span class="line">n=1000, p=0.9, max_singular=101.05219949564113</span><br></pre></td></tr></table></figure>
+<p>根据观察，最大奇异值与n,p之间的关系是max_singular=n*(1-p)</p>
+<hr>
+<p><img src="https://raw.githubusercontent.com/as953060314/picture/master/2018-05-21_222933.png" alt=""><br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">nearest</span><span class="params">(matrix_A,z)</span>:</span></span><br><span class="line">	idx=np.argmin(np.abs(matrix_A-z))</span><br><span class="line">	<span class="keyword">return</span> matrix_A[idx//np.shape(matrix_A)[<span class="number">0</span>]][idx%np.shape(matrix_A)[<span class="number">1</span>]]</span><br></pre></td></tr></table></figure></p>
+<p>根据提示，把矩阵matrix_A里的每一个元素都减去z,然后获得所得矩阵中绝对值最小的元素的索引，该索引代表的元素即使与z的值最接近的元素。  </p>
+<h4 id="测试代码-1"><a href="#测试代码-1" class="headerlink" title="测试代码"></a>测试代码</h4><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">matrix_A=np.random.random(size=[<span class="number">10</span>,<span class="number">10</span>])</span><br><span class="line">print(nearest(matrix_A,<span class="number">5</span>))</span><br></pre></td></tr></table></figure>
+<h4 id="结果-3"><a href="#结果-3" class="headerlink" title="结果"></a>结果</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">[[0.93059739 0.00876511 0.70560925 0.2388774  0.1925587  0.13501147</span><br><span class="line">  0.67538026 0.45353334 0.56005308 0.42424492]</span><br><span class="line"> [0.15135289 0.03206525 0.43530632 0.34864683 0.11803917 0.61252708</span><br><span class="line">  0.63750012 0.91986518 0.73333553 0.41027809]</span><br><span class="line"> [0.21912262 0.92825151 0.41417121 0.61705986 0.01896161 0.74536994</span><br><span class="line">  0.30234905 0.29492359 0.20047288 0.65651576]</span><br><span class="line"> [0.46347628 0.70735148 0.06351783 0.29542927 0.75189968 0.19221456</span><br><span class="line">  0.30014604 0.99659958 0.95334689 0.94916713]</span><br><span class="line"> [0.41139929 0.92399863 0.50937552 0.49099935 0.7323332  0.07490913</span><br><span class="line">  0.6600088  0.49095145 0.19368513 0.38531681]</span><br><span class="line"> [0.8886216  0.39987914 0.021721   0.85508795 0.35473727 0.26547035</span><br><span class="line">  0.68853818 0.47236815 0.13444103 0.66512414]</span><br><span class="line"> [0.34325048 0.36774161 0.8862545  0.47320286 0.70253863 0.32501771</span><br><span class="line">  0.44267665 0.01853662 0.141236   0.32341546]</span><br><span class="line"> [0.76944986 0.83380353 0.43924792 0.14467297 0.78263698 0.86952456</span><br><span class="line">  0.52818544 0.16549051 0.06783422 0.02373907]</span><br><span class="line"> [0.31989803 0.29975767 0.82193047 0.96154146 0.04192064 0.40480152</span><br><span class="line">  0.2914697  0.2935967  0.00327249 0.04784899]</span><br><span class="line"> [0.33077118 0.04194136 0.61841141 0.02789121 0.51963424 0.53040265</span><br><span class="line">  0.65079491 0.92001641 0.4433936  0.13753367]]</span><br><span class="line">0.9965995800963104</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/30/Homework-week8/" rel="next" title="Homework_week8">
+                <i class="fa fa-chevron-left"></i> Homework_week8
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/29/homework-matplotlib/" rel="prev" title="homework_matplotlib">
+                homework_matplotlib <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/portrait.png"
+                alt="Ye Zihao" />
+            
+              <p class="site-author-name" itemprop="name">Ye Zihao</p>
+              <p class="site-description motion-element" itemprop="description">Nothing is true ,everything is permitted</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/as953060314" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="m18126850693@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-globe"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Homework-of-Numpy"><span class="nav-number">1.</span> <span class="nav-text">Homework of Numpy</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#结果"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">结果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#结果-1"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">结果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试代码"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">测试代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#结果-2"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">结果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#结果如下："><span class="nav-number">1.0.0.5.</span> <span class="nav-text">结果如下：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试代码-1"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">测试代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#结果-3"><span class="nav-number">1.0.0.7.</span> <span class="nav-text">结果</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ye Zihao</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_sphere.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'as953060314',
+            repo: 'as953060314.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '11e555aa39262567fc51c0e69e18dc89fb444488',
+            
+                client_id: '40ba27fccda38fa9c56c'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+
+  
+
+  
+
+</body>
+</html>
